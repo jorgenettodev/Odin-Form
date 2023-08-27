@@ -6,8 +6,45 @@
 
 .container {
     min-height: 100vh;
+    min-width: 100vw;
     background: url(./assets/bg.gif);
     background-position: center;
-    background-size: cover;
-    width: 50vw;
+    background-size: auto;
+    z-index: -1;
+    
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+.form_container {
+    background-color: white;
+    width: 60vw;
+    height: 100vh;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.186);
+    height: 150px;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    top: 20%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+    position: relative;
+    left: 200px;
+    font-family: 'Helvetica';
+    font-weight: 300;
 }
