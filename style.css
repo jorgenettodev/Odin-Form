@@ -10,41 +10,40 @@
     background: url(./assets/bg.gif);
     background-position: center;
     background-size: auto;
-    z-index: -1;
-    
-
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1 {
     text-align: center;
-    color: white;
-    font-size: 32px;
+    color: whitesmoke;
+    font-size: 25px;
+    font-size: 80px;
+    font-family: 'Helvetica';
+    font-weight: 300;
 }
 
-.form_container {
-    background-color: white;
-    width: 60vw;
-    height: 100vh;
+.wraper {
+    background-color: rgba(0, 68, 128, 0.605);
+    border: 1px solid rgba(54,54,54,0.2);
+    backdrop-filter: blur(5px);
+    width: 50vw;
+    min-height: 80vh;
+    border-radius: 15px;
 }
 
 .modal {
-    background-color: rgba(0, 0, 0, 0.186);
-    height: 150px;
+    background-color: rgba(54, 54, 54, 0.186);
+    backdrop-filter: blur(5px);
+    min-height: 10vh;
     width: 100vw;
-    left: 0;
-    position: fixed;
-    top: 20%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-h1 {
-    color: white;
-    font-size: 80px;
-    position: relative;
-    left: 200px;
-    font-family: 'Helvetica';
-    font-weight: 300;
+form {
+   color: white;
 }
