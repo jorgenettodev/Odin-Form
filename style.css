@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --logo-font: 'Maven Pro', sans-serf;
+    --gunmetal: #1F3136ff;
+    --burnt-sienna: #E2654Aff;
+    --charcoal: #3C5863ff;
+    --atomic-tangerine: #FFA57Fff;
+    --gunmetal-2: #1B3641ff;
+}
+
 .container {
     min-height: 100vh;
     min-width: 100vw;
@@ -13,37 +22,71 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 h1 {
     text-align: center;
     color: whitesmoke;
-    font-size: 25px;
-    font-size: 80px;
-    font-family: 'Helvetica';
+    font-size: 60px;
+    font-family: var(--logo-font);
     font-weight: 300;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
 }
 
 .wraper {
-    background-color: rgba(0, 68, 128, 0.605);
-    border: 1px solid rgba(54,54,54,0.2);
+    background-color: rgba(1, 16, 29, 0.605);
     backdrop-filter: blur(5px);
-    width: 50vw;
-    min-height: 80vh;
-    border-radius: 15px;
+    width: 65vw;
+    min-height: 100vh;
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.modal {
-    background-color: rgba(54, 54, 54, 0.186);
+.logo_modal {
+    background-color: rgba(31, 49, 54, 0.8);
     backdrop-filter: blur(5px);
-    min-height: 10vh;
-    width: 100vw;
+    width: 35vw;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    left: 0;
+    top: calc(35vh - 140px);
+}
+
+.logo_modal img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
 }
 
 form {
    color: white;
+}
+
+.row {
+    background-color: rgba(60, 88, 99, 0.4);
+    width: 100%;
+    color: white;
+}
+
+.row_one, .row_three {
+    background-color: rgba(31, 49, 54, 0.4);
+    height: 35vh;
+}
+
+.row_two {
+    height: 30vh;
+}
+
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 50px;
+    }
 }
