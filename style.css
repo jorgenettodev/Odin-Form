@@ -36,7 +36,6 @@ h1 {
 }
 
 .wraper {
-    background-color: rgba(1, 16, 29, 0.605);
     backdrop-filter: blur(5px);
     width: 65vw;
     min-height: 100vh;
@@ -69,19 +68,19 @@ form {
    color: white;
 }
 
-.row {
-    background-color: rgba(60, 88, 99, 0.4);
+.row {ß
     width: 100%;
     color: white;
 }
 
 .row_one, .row_three {
-    background-color: rgba(31, 49, 54, 0.4);
+    background-color: rgba(200,189, 189, 0.8);
     height: 35vh;
 }
 
 .row_two {
     height: 30vh;
+    background-color: ;
 }
 
 
