@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 :root {
@@ -11,9 +12,14 @@
     --charcoal: #3C5863ff;
     --atomic-tangerine: #FFA57Fff;
     --gunmetal-2: #1B3641ff;
+    --input-border-grey: rgb(217,217,217);
+    --input-bg-grey: #D9D9D9;
+    --special-orange: #FF8A53;
+
+    --red: rgb(245,2,2);
 }
 
-.container {
+.column_one {
     min-height: 100vh;
     min-width: 100vw;
     background: url(./assets/bg.gif);
@@ -29,13 +35,13 @@ h1 {
     color: whitesmoke;
     font-size: 60px;
     font-family: var(--logo-font);
-    font-weight: 300;
+    font-weight: 700;
     padding: 0;
     margin: 0;
     line-height: 1;
 }
 
-.wraper {
+.column_two {
     backdrop-filter: blur(5px);
     width: 65vw;
     min-height: 100vh;
@@ -45,7 +51,7 @@ h1 {
     flex-direction: column;
 }
 
-.logo_modal {
+.logo_container {
     background-color: rgba(31, 49, 54, 0.8);
     backdrop-filter: blur(5px);
     width: 35vw;
@@ -58,7 +64,7 @@ h1 {
     top: calc(35vh - 140px);
 }
 
-.logo_modal img {
+.logo_container img {
     width: 60px;
     height: 60px;
     margin-right: 15px;
@@ -74,18 +80,50 @@ form {
 }
 
 .row_one, .row_three {
-    background-color: rgba(200,189, 189, 0.8);
+    background-color: rgba(51,40,40,0.8);
     height: 35vh;
 }
 
 .row_two {
     height: 30vh;
-    background-color: ;
+    background-color: rgba(200, 189,189, 0.8);
+    display: flex;
+    align-items: center;
 }
 
 
-@media screen and (max-width: 700px) {
-    h1 {
-        font-size: 50px;
-    }
+/* FORM */
+
+form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+.form_row {
+    display: flex;
+
+
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 15px;
+}
+
+.form_control input {
+    border-radius: 5px;
+    border: 1px solid rgba(130,119,119,0.46);
+    background-color: var(--input-bg-grey);
+}
+
+.form_control label {
+    color: rgba(49,50,58,1);
+    font-size: 1.1125rem;
+    font-weight: 400;
+    font-family: 'Maven Pro';
 }
