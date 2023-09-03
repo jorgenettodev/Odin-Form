@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Form</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@300;400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="column_one">
@@ -19,53 +19,58 @@
             <div class="row row_one">here you can focus, study and have a good time, listening to a soothing lofi and rain. <br><br>You know you want to.</div>
             <div class="row row_two">
                 <form action="#">
-                        <div class="form_row">
-                            <div class="form_control">
-                                <label for="first_name">first name</label>
-                                <input type="text" id="first_name">
+                    <div class="row container">
+                            <div class="form_row">
+                                <div class="form_control">
+                                    <label for="first_name">first name</label>
+                                    <input type="text" id="first_name">
+                                </div>
+                                <div class="form_control">
+                                    <label for="last_name">last name</label>
+                                    <input type="text" id="last_name">
+                                </div>
                             </div>
-                            <div class="form_control">
-                                <label for="last_name">last name</label>
-                                <input type="text" id="last_name">
+                        
+                        
+                            <div class="form_row">
+                                <div class="form_control">
+                                    <label for="email">email</label>
+                                    <input type="email" id="email">
+                                </div>
+                                <div class="form_control">
+                                    <label for="phone">phone</label>
+                                    <input type="text" id="phone">
+                                </div>
                             </div>
-                        </div>
-                    
-                    
-                        <div class="form_row">
-                            <div class="form_control">
-                                <label for="email">email</label>
-                                <input type="email" id="email">
+                       
+    
+                            <div class="form_row">
+                                <div class="form_control">
+                                    <label for="password">password</label>
+                                    <input type="password" id="password">
+                                </div>
+                                <div class="form_control">
+                                    <label for="confirm_pwd">confirm password</label>
+                                    <input type="password" id="confirm_pwd">
+                                </div>
                             </div>
-                            <div class="form_control">
-                                <label for="phone">phone</label>
-                                <input type="text" id="phone">
-                            </div>
-                        </div>
-                   
+                    </div>
 
-                        <div class="form_row">
-                            <div class="form_control">
-                                <label for="password">password</label>
-                                <input type="password" id="password">
-                            </div>
-                            <div class="form_control">
-                                <label for="confirm_pwd">confirm password</label>
-                                <input type="password" id="confirm_pwd">
+
+                    <div class="row row_three">
+                        <div class="button_container">
+                            <button class="account_button" type="submit">create account</button>
+                            <div class="account_text__container">
+                                <span class="login_text">already have an account?</span>
+                                <a href="#" class="login_link"><span>log in</span></a>
                             </div>
                         </div>
+                    </div>
                 </form>
             </div>
 
 
-            <div class="row row_three">
-                <div class="button_container">
-                    <button class="account_button">create account</button>
-                    <div class="account_text__container">
-                        <span class="login_text">already have an account?</span>
-                        <a href="#" class="login_link"><span>log in</span></a>
-                    </div>
-                </div>
-            </div>
+            
         </div>        
     </div>
 </body>
