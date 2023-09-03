@@ -119,7 +119,7 @@ form {
 .form_control {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     margin: 10px;
 }
 
@@ -128,6 +128,8 @@ form {
     border: 1px solid rgba(130, 119, 119, 0.46);
     background-color: var(--input-bg-grey);
     padding: 10px;
+    color: #94a3b8;
+    transition: box-shadow 0.15s ease-in-out, border 0.15s ease-in-out;
 }
 
 .form_control label {
@@ -135,6 +137,13 @@ form {
     font-size: 1.1125rem;
     font-weight: 400;
     font-family: 'Maven Pro';
+    margin-bottom: 3px;
+}
+
+.form_control input:focus {
+    border: 1px solid blue;
+    outline: 0;
+    box-shadow: 0 0 0 5px rgba(129, 140, 248, 0.3);
 }
 
 /* create account button */
@@ -162,11 +171,11 @@ form {
     padding: 5px 10px;
 
     margin-bottom: 5px;
-    transition: all 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
 }
 
 .account_button:hover {
-    box-shadow: 0 0 10px #FF8A53;
+    box-shadow: 0 0 5px #FF8A53;
 }
 
 .login_link {
