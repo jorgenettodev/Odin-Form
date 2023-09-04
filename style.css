@@ -83,7 +83,7 @@ form {
 }
 
 .row.container {
-    height: 30vh;
+    height: 35vh;
     background-color: rgba(200, 189,189, 0.8);
     display: flex;
     align-items: flex-start;
@@ -144,6 +144,15 @@ form {
     border: 1px solid blue;
     outline: 0;
     box-shadow: 0 0 0 5px rgba(129, 140, 248, 0.3);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error_message {
+    color: red;
+    font-size: 1rem;
 }
 
 /* create account button */
