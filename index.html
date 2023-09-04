@@ -47,11 +47,11 @@
                             <div class="form_row">
                                 <div class="form_control">
                                     <label for="password">password</label>
-                                    <input type="password" id="password" required>
+                                    <input type="password" id="password" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,16})$" title="It must have at least: one number, one uppercase letter, one lowercase letter and 6-16 characters." required>
                                 </div>
                                 <div class="form_control">
                                     <label for="confirm_pwd">confirm password</label>
-                                    <input type="password" id="confirm_pwd" required>
+                                    <input type="password" id="confirm_pwd" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,16})$" title="It must have at least: one number, one uppercase letter, one lowercase letter and 6-16 characters." required>
                                 </div>
                             </div>
                     </div>
@@ -73,5 +73,6 @@
             
         </div>        
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
