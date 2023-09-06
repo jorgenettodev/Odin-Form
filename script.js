@@ -4,6 +4,27 @@ let errorMessage = document.querySelector('#error_message');
 let form = document.querySelector('form');
 let passwordsValid = false;
 
+// fields
+let firstName = document.querySelector('#first_name').value;
+let lastName = document.querySelector('#last_name').value;
+let email = document.querySelector('#email').value;
+let phone = document.querySelector('#phone').value;
+let password = document.querySelector('#password').value;
+
+function saveUserData() {
+    let firstName = document.querySelector('#first_name').value;
+    let lastName = document.querySelector('#last_name').value;
+    let email = document.querySelector('#email').value;
+    let phone = document.querySelector('#phone').value;
+    let password = document.querySelector('#password').value;
+
+    console.log(email);
+    console.log(password);
+}
+
+form.addEventListener('submit', saveUserData);
+
+
 function validatePasswords() {
     let pwd = passwordInput.value;
     let confirm_pwd = confirmPasswordInput.value;
