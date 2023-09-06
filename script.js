@@ -11,14 +11,18 @@ function validatePasswords() {
     if (pwd == confirm_pwd) {
         errorMessage.innerText = '';
         passwordsValid = true;
+        passwordInput.style = 'border-color: green';
+        confirmPasswordInput.style = 'border-color: green'
     } else {
         passwordsValid = false;
         errorMessage.innerText = 'Passwords don\'t match';
+        passwordInput.style = 'border-color: red';
+        confirmPasswordInput.style = 'border-color: red'
     }
 }
 
-passwordInput.addEventListener('blur', validatePasswords);
-confirmPasswordInput.addEventListener('blur', validatePasswords);
+passwordInput.addEventListener('input', validatePasswords);
+confirmPasswordInput.addEventListener('input', validatePasswords);
 
 
 form.addEventListener('submit', (e) => {
