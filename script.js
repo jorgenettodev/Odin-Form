@@ -1,16 +1,19 @@
+// pwd inputs
 let passwordInput = document.querySelector('#password');
 let confirmPasswordInput = document.querySelector('#confirm_pwd');
+
+// error message span
 let errorMessage = document.querySelector('#error_message');
+
+// form
 let form = document.querySelector('form');
+
+// passwords don't match message boolean control
 let passwordsValid = false;
 
-// fields
-let firstName = document.querySelector('#first_name').value;
-let lastName = document.querySelector('#last_name').value;
-let email = document.querySelector('#email').value;
-let phone = document.querySelector('#phone').value;
-let password = document.querySelector('#password').value;
 
+
+// saves user data when the user clicks submit.
 function saveUserData() {
     let firstName = document.querySelector('#first_name').value;
     let lastName = document.querySelector('#last_name').value;
@@ -20,11 +23,16 @@ function saveUserData() {
 
     console.log(email);
     console.log(password);
-}
 
+    localStorage.setItem('UserLogin', email);
+    localStorage.setItem('UserPassword', password);
+};
+
+// submits the form and logs the email and password.
 form.addEventListener('submit', saveUserData);
 
 
+// if passwords match: border-colors turns green; if not, they turn red;
 function validatePasswords() {
     let pwd = passwordInput.value;
     let confirm_pwd = confirmPasswordInput.value;
@@ -32,8 +40,8 @@ function validatePasswords() {
     if (pwd == confirm_pwd) {
         errorMessage.innerText = '';
         passwordsValid = true;
-        passwordInput.style = 'border-color: green';
-        confirmPasswordInput.style = 'border-color: green'
+        passwordInput.style = 'border-color: rgba(130, 119, 119, 0.46';
+        confirmPasswordInput.style = 'border-color: rgba(130, 119, 119, 0.46'
     } else {
         passwordsValid = false;
         errorMessage.innerText = 'Passwords don\'t match';
@@ -53,4 +61,6 @@ form.addEventListener('submit', (e) => {
     } else {
         alert('your passwords are not valid.')
     }
-})
+});
+
+
