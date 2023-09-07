@@ -6,9 +6,23 @@
     <title>Odin Form</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="column_one">
+        <div class="audio_container">
+            <div class="audio__file">
+                <audio src="./assets/rain.mp3" autoplay loop type="audio/mp3" id="audio"></audio>
+            </div>
+
+            <div class="audio__icon">
+                <button id="btn_unmute"><i class='bx bx-volume-full bx-flip-vertical'></i></button>
+                <button id="btn_mute"><i class='bx bxs-volume-mute bx-flip-vertical'></i></button>
+            </div>
+        </div>
+
+
+
         <div class="logo_container">
             <img src="./assets/logo.png">
             <h1>study and relax</h1>
