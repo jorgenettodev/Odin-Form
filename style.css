@@ -83,7 +83,7 @@ form {
 }
 
 .row.container {
-    height: 30vh;
+    height: 35vh;
     background-color: rgba(200, 189,189, 0.8);
     display: flex;
     align-items: flex-start;
@@ -128,7 +128,7 @@ form {
     border: 1px solid rgba(130, 119, 119, 0.46);
     background-color: var(--input-bg-grey);
     padding: 10px;
-    color: #94a3b8;
+    color: #000;
     transition: box-shadow 0.15s ease-in-out, border 0.15s ease-in-out;
 }
 
@@ -144,6 +144,19 @@ form {
     border: 1px solid blue;
     outline: 0;
     box-shadow: 0 0 0 5px rgba(129, 140, 248, 0.3);
+}
+
+/* input[type="password"]:valid {
+    border: 1px solid green;
+} */
+
+/* input[type="password"]:invalid {
+    border: 1px solid red;
+} */
+
+.error_message {
+    color: red;
+    font-size: 1rem;
 }
 
 /* create account button */
@@ -186,4 +199,12 @@ form {
     color: #ff8a53;
     text-decoration: none;
     cursor: pointer;
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
 }
