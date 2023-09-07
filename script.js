@@ -81,11 +81,11 @@ const muteButton = document.querySelector('#btn_mute');
 const unmuteButton = document.querySelector('#btn_unmute');
 
 const playSound = () => {
-    audioElement.muted = false;
+    audioElement.muted = false; // Unmute the audio
 }
 
 const muteSound = () => {
-    audioElement.muted = true;
+    audioElement.muted = true; // Mute the audio
 }
 
 muteButton.addEventListener('click', muteSound);
