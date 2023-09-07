@@ -21,7 +21,7 @@
 
 .column_one {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 35%;
     background: url(./assets/bg.gif);
     background-position: center;
     background-size: cover;
@@ -33,7 +33,7 @@
 h1 {
     text-align: center;
     color: whitesmoke;
-    font-size: 60px;
+    font-size: 3rem;
     font-family: var(--logo-font);
     font-weight: 700;
     padding: 0;
@@ -43,7 +43,7 @@ h1 {
 
 .column_two {
     backdrop-filter: blur(5px);
-    width: 65vw;
+    width: 65%;
     min-height: 100vh;
     position: fixed;
     right: 0;
@@ -112,6 +112,7 @@ form {
 }
 .form_row {
     display: flex;
+    width: 100%;
 
 
 }
@@ -119,7 +120,7 @@ form {
 .form_control {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: max(150px, 40%);
     margin: 10px;
 }
 
@@ -207,4 +208,23 @@ form {
 
 .invalid {
     border-color: red;
+}
+
+@media screen and (max-width: 550px) {
+    .row.container {
+        padding-left: 0;
+    }
+
+    .form_row {
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    .form_control {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
 }
