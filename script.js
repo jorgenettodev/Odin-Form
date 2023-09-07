@@ -75,3 +75,18 @@ form.addEventListener('submit', (e) => {
 });
 
 
+// AUDIO FEATURE
+const audioElement = document.querySelector('#audio');
+const muteButton = document.querySelector('#btn_mute');
+const unmuteButton = document.querySelector('#btn_unmute');
+
+const playSound = () => {
+    audioElement.muted = false;
+}
+
+const muteSound = () => {
+    audioElement.muted = true;
+}
+
+muteButton.addEventListener('click', muteSound);
+unmuteButton.addEventListener('click', playSound);

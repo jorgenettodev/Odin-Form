@@ -210,6 +210,26 @@ form {
     border-color: red;
 }
 
+/* audio */
+.audio_container {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.audio__icon i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.audio__icon button {
+    background-color: transparent;
+    border: none;
+}
+
 @media screen and (max-width: 550px) {
     .row.container {
         padding-left: 0;
