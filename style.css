@@ -41,6 +41,7 @@ h1 {
     line-height: 1;
 }
 
+
 .column_two {
     backdrop-filter: blur(5px);
     width: 65%;
@@ -75,6 +76,17 @@ form {
 .row {
     width: 100%;
     color: white;
+}
+
+.row_one {
+    display: flex;
+    align-items: flex-end;
+}
+
+.row_one h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 15px;
 }
 
 .row_one, .row_three {

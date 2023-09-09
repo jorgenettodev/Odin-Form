@@ -75,18 +75,25 @@ form.addEventListener('submit', (e) => {
 });
 
 
-// AUDIO FEATURE
-const audioElement = document.querySelector('#audio');
-const muteButton = document.querySelector('#btn_mute');
-const unmuteButton = document.querySelector('#btn_unmute');
+// // AUDIO FEATURE
+// const audioElement = document.querySelector('#audio');
+// const muteButton = document.querySelector('#btn_mute');
+// const unmuteButton = document.querySelector('#btn_unmute');
 
-const playSound = () => {
-    audioElement.muted = false; // Unmute the audio
-}
+// const playSound = () => {
+//     audioElement.muted = false; // Unmute the audio
+// }
 
-const muteSound = () => {
-    audioElement.muted = true; // Mute the audio
-}
+// const muteSound = () => {
+//     audioElement.muted = true; // Mute the audio
+// }
 
-muteButton.addEventListener('click', muteSound);
-unmuteButton.addEventListener('click', playSound);
+// muteButton.addEventListener('click', muteSound);
+// unmuteButton.addEventListener('click', playSound);
+
+// autoplay
+// const autoPlay = function() {
+//     audioElement.play();
+// };
+
+// window.addEventListener('load', autoPlay);
